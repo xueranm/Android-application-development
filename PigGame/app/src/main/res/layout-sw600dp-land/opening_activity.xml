@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Large landscape -->
+<!-- at least 640dp x 480dp -->
+<!-- Nexus 7 (2012 and 2013) is 600dp x 960dp -->
+<!-- Nexus 5X is 411dp x 732dp -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false">
+
+    <fragment
+        android:id="@+id/first_fragment"
+        android:name="com.example.xueranma.piggame.FirstFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        tools:layout="@layout/first_fragment" />
+
+    <fragment
+        android:id="@+id/second_fragment"
+        android:name="com.example.xueranma.piggame.SecondFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        tools:layout="@layout/second_fragment" />
+
+</LinearLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/backGround"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/pigg"
+        tools:layout_conversion_absoluteHeight="519dp"
+        tools:layout_conversion_absoluteWidth="384dp"
+        tools:layout_conversion_absoluteX="0dp"
+        tools:layout_conversion_absoluteY="0dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/play1Lable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Player 1"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@+id/player1EditText"
+        app:layout_constraintRight_toRightOf="@+id/player1EditText"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_conversion_absoluteHeight="28dp"
+        tools:layout_conversion_absoluteWidth="89dp"
+        tools:layout_conversion_absoluteX="0dp"
+        tools:layout_conversion_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/instructionTextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/instructions"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/player1EditText"
+        tools:layout_conversion_absoluteHeight="28dp"
+        tools:layout_conversion_absoluteWidth="114dp"
+        tools:layout_conversion_absoluteX="135dp"
+        tools:layout_conversion_absoluteY="141dp"
+        app:layout_constraintHorizontal_bias="0.375" />
+
+    <TextView
+        android:id="@+id/player2Lable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Player 2"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@+id/player2EditText"
+        app:layout_constraintRight_toRightOf="@+id/player2EditText"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_conversion_absoluteHeight="28dp"
+        tools:layout_conversion_absoluteWidth="89dp"
+        tools:layout_conversion_absoluteX="194dp"
+        tools:layout_conversion_absoluteY="0dp" />
+
+    <EditText
+        android:id="@+id/player1EditText"
+        android:layout_width="158dp"
+        android:layout_height="43dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/play1Lable"
+        tools:layout_conversion_absoluteHeight="43dp"
+        tools:layout_conversion_absoluteWidth="194dp"
+        tools:layout_conversion_absoluteX="0dp"
+        tools:layout_conversion_absoluteY="58dp" />
+
+    <EditText
+        android:id="@+id/player2EditText"
+        android:layout_width="173dp"
+        android:layout_height="43dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/player1EditText"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/player2Lable"
+        tools:layout_conversion_absoluteHeight="43dp"
+        tools:layout_conversion_absoluteWidth="190dp"
+        tools:layout_conversion_absoluteX="194dp"
+        tools:layout_conversion_absoluteY="58dp" />
+
+    <Button
+        android:id="@+id/newGameButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="New Game"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/backGround"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/instructionTextview"
+        app:layout_constraintVertical_bias="0.975"
+        tools:layout_conversion_absoluteHeight="48dp"
+        tools:layout_conversion_absoluteWidth="141dp"
+        tools:layout_conversion_absoluteX="121dp"
+        tools:layout_conversion_absoluteY="383dp" />
+
+</android.support.constraint.ConstraintLayout>

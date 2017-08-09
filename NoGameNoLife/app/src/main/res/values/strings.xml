@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">No Game No Life</string>
+    <string name="point_lable">Your total points now</string>
+    <string name="about">This No Game No Life is made by Xueran Ma.</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_about">About</string>
+</resources>

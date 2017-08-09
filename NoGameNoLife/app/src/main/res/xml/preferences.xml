@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:key="ban_negative_point"
+        android:title="Ban negative total point?"
+        android:summary="If tick the checkbox, then when total point is negative, Consume button will be unable!"
+        android:defaultValue="false" />
+</PreferenceScreen>

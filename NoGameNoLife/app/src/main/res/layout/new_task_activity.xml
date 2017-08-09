@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/bg"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/taskDesLable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Task description:"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/taskDesEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text=""
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/setPoint2TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please enter a point:"
+        android:textSize="30sp"/>
+
+    <EditText
+        android:id="@+id/setPoint2EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:text=""
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/submitTasButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+</LinearLayout>

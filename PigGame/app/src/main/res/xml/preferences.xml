@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:key="pref_win_score_category"
+        android:title="Win Score">
+        <ListPreference
+            android:key="pref_winScore"
+            android:title="@string/win_score_title"
+            android:summary="@string/win_score_summary"
+            android:dialogTitle="@string/win_score_title"
+            android:entries="@array/default_win_scores"
+            android:entryValues="@array/default_win_scores"
+            android:defaultValue="@string/default_win_scores_default" />
+
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="pref_die_setting_category"
+        android:title="Die setting">
+        <ListPreference
+            android:key="pref_number_of_die"
+            android:title="@string/number_of_die_title"
+            android:summary="@string/number_of_die_summary"
+            android:dialogTitle="@string/number_of_die_title"
+            android:entries="@array/default_number_of_die"
+            android:entryValues="@array/default_number_of_die"
+            android:defaultValue="@string/default_number_of_die_default" />
+        <ListPreference
+            android:key="pref_side_on_a_die"
+            android:title="@string/sides_on_a_die_title"
+            android:summary="@string/sides_on_a_die_summary"
+            android:dialogTitle="@string/sides_on_a_die_title"
+            android:entries="@array/default_sides_on_a_die"
+            android:entryValues="@array/default_sides_on_a_die"
+            android:defaultValue="@string/default_sides_on_a_die_default" />
+        <ListPreference
+            android:key="pref_dead_die_side"
+            android:title="@string/dead_side_title"
+            android:summary="@string/dead_side_summary"
+            android:dialogTitle="@string/dead_side_title"
+            android:entries="@array/default_dead_side"
+            android:entryValues="@array/default_dead_side"
+            android:defaultValue="@string/default_dead_side_default" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

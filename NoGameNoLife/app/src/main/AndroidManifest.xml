@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.xueranma.nogamenolife">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".NoGameNoLife">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ConsumeActivity"
+            android:label="Consume activity"
+            android:launchMode="singleInstance"
+            android:configChanges="keyboardHidden|screenSize"
+            android:parentActivityName=".NoGameNoLife">
+        </activity>
+        <activity
+            android:name=".EarnActivity"
+            android:label="Earn activity"
+            android:launchMode="singleInstance"
+            android:configChanges="keyboardHidden|screenSize"
+            android:parentActivityName=".NoGameNoLife">
+        </activity>
+        <activity
+            android:name=".NewRewardActivity"
+            android:label="new reward"
+            android:launchMode="singleInstance"
+            android:parentActivityName=".ConsumeActivity">
+        </activity>
+        <activity
+            android:name=".NewTaskActivity"
+            android:label="new task"
+            android:launchMode="singleInstance"
+            android:parentActivityName=".EarnActivity">
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="Setting"
+            android:launchMode="singleInstance"
+            android:parentActivityName=".NoGameNoLife">
+        </activity>
+    </application>
+
+</manifest>
