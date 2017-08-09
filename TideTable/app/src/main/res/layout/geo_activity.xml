@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/distanceLable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Distance:"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/distance1Lable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Distance:"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/distance2Lable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Distance:"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/florenceButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Florence" />
+
+    <Button
+        android:id="@+id/charlestonButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Charleston" />
+
+    <Button
+        android:id="@+id/garibaldiButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Garibaldi" />
+
+
+</LinearLayout>
